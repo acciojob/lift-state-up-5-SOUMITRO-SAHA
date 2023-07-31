@@ -11,10 +11,10 @@ const Parent = () => {
 		const userName = e.target.username.value;
 		const password = e.target.password.value;
 
-		// Checking for Empty Values:
-		if (!(userName && password)) {
-			return;
-		}
+		// // Checking for Empty Values:
+		// if (!(userName && password)) {
+		// 	return;
+		// }
 
 		setIsLoggedIn((prev) => !prev);
 
@@ -37,7 +37,7 @@ const Parent = () => {
 					<button>Login</button>
 				</form>
 			)}
-			{isLoggedIn && <p>Your are logged in!</p>}
+			{isLoggedIn && <p>You are logged in!</p>}
 		</>
 	);
 };
